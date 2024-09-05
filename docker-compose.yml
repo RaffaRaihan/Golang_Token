@@ -1,0 +1,12 @@
+version: "3"
+services:
+  class-api-dev:
+    container_name: class-api-dev
+    image: class-api-dev:latest
+    networks:
+      alkademi:
+        ipv4_address: 172.19.0.14
+    restart: always
+networks:
+  alkademi:
+    external: true
